@@ -3,6 +3,7 @@ require 'config.php';
 class Database
 {
     public $db;
+    public $errorInfo = '';
     public function __construct()
     {
         if(empty($this->db))
@@ -11,7 +12,7 @@ class Database
                 $this->db = new PDO(DB_DSN,DB_USER,DB_PASSWD,DB_OPT);
                 return $this->db;
             } catch (PDOException $ex) {
-                echo '<div class="alert alert-danger">'.$ex->getMessage().'</div>';
+                $this->errorInfo = '<div class="alert alert-danger">'.$ex->getMessage().'</div>';
             }
         } else {
           return $this->db;
