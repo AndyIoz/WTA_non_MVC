@@ -23,7 +23,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/main"><i class="fas fa-home"></i></span> Home</a>
+                <a class="nav-link" href="/main"><span><i class="fas fa-home"></i></span> Home</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -34,6 +34,9 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Новый сотрудник</a>
                 </div>
+            </li>
+            <li class="nav-item">
+                <a href="/openserver/phpmyadmin/" class="nav-link"><span><i class="fas fa-cogs"></i></span> PHPMyAdmin</a>
             </li>
         </ul>
     </div>

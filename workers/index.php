@@ -34,7 +34,9 @@
                     <a class="dropdown-item" href="./add/">Новый сотрудник</a>
                 </div>
             </li>
-
+            <li class="nav-item">
+                <a href="/openserver/phpmyadmin/" class="nav-link"><span><i class="fas fa-cogs"></i></span> PHPMyAdmin</a>
+            </li>
         </ul>
     </div>
     <div class="form-inline my-2 my-lg-0">
