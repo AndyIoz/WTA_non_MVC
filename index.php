@@ -38,7 +38,7 @@ else if(isset($_POST['login']) && isset($_POST['passwd']))
                 <article class="card-body">
                     <h4 class="card-title text-center mb-4 mt-1">Авторизация</h4>
                     <hr>
-                    <? if($_SESSION['access'] === -5) echo '<div class="alert alert-danger">Неверный логин или пароль</div>';?>
+                    <?php if($_SESSION['access'] === -5) echo '<div class="alert alert-danger">Неверный логин или пароль</div>';?>
                     <form method="post">
                         <div class="form-group">
                             <div class="input-group">
@@ -74,6 +74,3 @@ else if(isset($_POST['login']) && isset($_POST['passwd']))
 <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
-<?php
-
-?>
