@@ -11,7 +11,6 @@ else if(isset($_POST['login']) && isset($_POST['passwd']))
         header('Location: /main/');
     }else{
         $_SESSION['access'] = -5;
-
     }
 }
 ?>
@@ -65,7 +64,6 @@ else if(isset($_POST['login']) && isset($_POST['passwd']))
                     </form>
                 </article>
             </div>
-
         </div>
     </div>
 </div>
